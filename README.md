@@ -38,10 +38,16 @@ installing dependencies for the project. For our purposes, all of our dependenci
 
 You now have all of the application code, Python environment, and application package dependencies installed. To make sure that the application is working, run the following command:
 
-- `python app.py`
+- `./run.py`
 
 This will start the server and the application will be viewable at [http://localhost:5000](http://localhost:5000).
 
 ## Contribution Guide
 
-Coming soon...
+- Fork this repository by hitting the corresponding Fork button in the upper-right corner of this page
+- Once it has been forked, clone the new repository that it creates in your account
+- Once you have grabbed a user story to work on, create a new branch that corresponds to it
+  - Note: This is known as a "feature branch"
+- As you make code changes, make commits against this branch and test in your local environment
+- Once you feel like the user story has been completed, make a pull request from your local repository's feature branch back to this repository's master branch
+- I will merge the code in and the main repository will then be updated with your changes
