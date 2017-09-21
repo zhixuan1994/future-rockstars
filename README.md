@@ -51,3 +51,4 @@ This will start the server and the application will be viewable at [http://local
 - As you make code changes, make commits against this branch and test in your local environment
 - Once you feel like the user story has been completed, make a pull request from your local repository's feature branch back to this repository's master branch
 - I will merge the code in and the main repository will then be updated with your changes
+- Before you begin a new user story, be sure to use the corresponding `git pull` command to update your local repository
