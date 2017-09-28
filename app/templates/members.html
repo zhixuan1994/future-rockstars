@@ -18,6 +18,7 @@
                 <th>Age</th>
                 <th>Talent</th>
                 <th>Status</th>
+                <th></th>
             </tr>
         </thead>
         <tbody>
@@ -28,6 +29,21 @@
                     <td>{{member.age}}</td>
                     <td>{{member.talent}}</td>
                     <td>{{member.status}}</td>
+                    {% if member.checkin == false %}
+                    <td>
+                        <form action="{{ url_for('checkInMember') }}" method="post">
+                            <input type="hidden" name="name" value="{{member.name}}" />
+                            <input type="submit" class="btn btn-success btn-sm" value="Check In" />
+                        </form>
+                    </td>
+                    {% else %}
+                    <td>
+                        <form action="{{ url_for('checkOutMember') }}" method="post">
+                            <input type="hidden" name="name" value="{{member.name}}" />
+                            <input type="submit" class="btn btn-success btn-sm" value="Check Out" />
+                        </form>
+                    </td>
+                    {% endif %}
                 </tr>
             {% endfor %}
         </tbody>
