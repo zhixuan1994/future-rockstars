@@ -2,4 +2,29 @@
 {% set active_page = "members" %}
 {% block content %}
     <h2>Members</h2>
+
+    <hr>
+    
+    <table class="table table-striped">
+        <thead class="thead-inverse">
+            <tr>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Age</th>
+                <th>Talent</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for member in members %}
+                <tr>
+                    <td>{{member.name}}</td>
+                    <td>{{member.gender}}</td>
+                    <td>{{member.age}}</td>
+                    <td>{{member.talent}}</td>
+                    <td>{{member.status}}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
 {% endblock %}
