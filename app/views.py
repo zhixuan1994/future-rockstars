@@ -19,4 +19,6 @@ def dormsView():
 
 @app.route('/members', methods=['GET'])
 def membersView():
-    return render_template('members.html', title='Members')
+    Entry = Query()
+    members = db.search(Entry.type == 'member')
+    return render_template('members.html', title='Members', members=members)
