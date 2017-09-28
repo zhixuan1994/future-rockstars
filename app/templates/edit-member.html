@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% set active_page = "edit_member" %}
+{% block content %}
+    <h2>Edit {{member.name}}</h2>
+
+    <form action="{{ url_for('editMember') }}" method="post">
+        <div class="form-group">
+            <label for="inputAge">Age</label>
+            <input type="number" class="form-control" name="age" id="inputAge" value="{{member.age}}">
+        </div>
+        <div class="form-group">
+            <label for="inputGender">Gender</label>
+            <input type="text" class="form-control" name="gender" id="inputGender" value="{{member.gender}}">
+        </div>
+        <div class="form-group">
+            <label for="inputTalent">Talent</label>
+            <input type="text" class="form-control" name="talent" id="inputTalent" value="{{member.talent}}">
+        </div>
+
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        <input type="submit" class="btn btn-primary" value="Save Member" />
+    </form>
+{% endblock %}
