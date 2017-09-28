@@ -1,5 +1,8 @@
 from app import app
 from flask import render_template
+from tinydb import TinyDB, Query
+
+db = TinyDB('../db.json')
 
 @app.route('/', methods=['GET'])
 @app.route('/index', methods=['GET'])
