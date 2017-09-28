@@ -44,11 +44,12 @@ This will start the server and the application will be viewable at [http://local
 
 ## Contribution Guide
 
-- Fork this repository by hitting the corresponding Fork button in the upper-right corner of this page
-- Once it has been forked, clone the new repository that it creates in your account
-- Once you have grabbed a user story to work on, create a new branch that corresponds to it
-  - Note: This is known as a "feature branch"
-- As you make code changes, make commits against this branch and test in your local environment
-- Once you feel like the user story has been completed, make a pull request from your local repository's feature branch back to this repository's master branch
-- I will merge the code in and the main repository will then be updated with your changes
-- Before you begin a new user story, be sure to use the corresponding `git pull` command to update your local repository
+- Clone this repository to your local machine with the command above and test that your environment can run it without issue before proceeding
+- Once you've selected a user story to work on, be sure to add yourself as a member and move it into the "In Progress" column
+- As you write new code, test it in your local environment and then make any required commits against the master branch
+  - `git commit -m "[UserStory#] - What you changed in the code..."`
+- Once you feel like the user story has been completed, perform a git push against the master branch
+  - `git push -u origin master`
+- The code will then be merged back into this repository and we can do reviews as necessary
+- Before you begin a new user story, be sure to pull the latest code from the repository so that we do not run into conflicts
+  - `git pull`
