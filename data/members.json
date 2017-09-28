@@ -1,0 +1,110 @@
+[
+    {
+        "type": "member",
+        "name": "Boy 1",
+        "gender": "Male",
+        "age": "12",
+        "talent": "Singer",
+        "status": "Pending",
+        "checkin": false
+    },
+    {
+        "type": "member",
+        "name": "Boy 2",
+        "gender": "Male",
+        "age": "11",
+        "talent": "Singer",
+        "status": "Pending",
+        "checkin": false
+    },
+    {
+        "type": "member",
+        "name": "Boy 3",
+        "gender": "Male",
+        "age": "9",
+        "talent": "Singer",
+        "status": "Pending",
+        "checkin": true
+    },
+    {
+        "type": "member",
+        "name": "Boy 4",
+        "gender": "Male",
+        "age": "10",
+        "talent": "Singer",
+        "status": "Pending",
+        "checkin": false
+    },
+    {
+        "type": "member",
+        "name": "Boy 5",
+        "gender": "Male",
+        "age": "7",
+        "talent": "Singer",
+        "status": "Pending",
+        "checkin": false
+    },
+    {
+        "type": "member",
+        "name": "Boy 6",
+        "gender": "Male",
+        "age": "17",
+        "talent": "Singer",
+        "status": "Pending",
+        "checkin": false
+    },
+    {
+        "type": "member",
+        "name": "Girl 1",
+        "gender": "Female",
+        "age": "12",
+        "talent": "Singer",
+        "status": "Pending",
+        "checkin": false
+    },
+    {
+        "type": "member",
+        "name": "Girl 2",
+        "gender": "Female",
+        "age": "11",
+        "talent": "Singer",
+        "status": "Pending",
+        "checkin": false
+    },
+    {
+        "type": "member",
+        "name": "Girl 3",
+        "gender": "Female",
+        "age": "9",
+        "talent": "Singer",
+        "status": "Pending",
+        "checkin": true
+    },
+    {
+        "type": "member",
+        "name": "Girl 4",
+        "gender": "Female",
+        "age": "10",
+        "talent": "Singer",
+        "status": "Pending",
+        "checkin": false
+    },
+    {
+        "type": "member",
+        "name": "Girl 5",
+        "gender": "Female",
+        "age": "7",
+        "talent": "Singer",
+        "status": "Pending",
+        "checkin": false
+    },
+    {
+        "type": "member",
+        "name": "Girl 6",
+        "gender": "Female",
+        "age": "17",
+        "talent": "Singer",
+        "status": "Pending",
+        "checkin": false
+    }
+]

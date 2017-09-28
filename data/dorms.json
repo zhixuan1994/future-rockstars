@@ -1,0 +1,66 @@
+[
+    {
+        "type": "dorm",
+        "name": "Dorm 1",
+        "gender": "Female",
+        "members": [
+            {
+                "name": "Girl 1"
+            },
+            {
+                "name": "Girl 3"
+            },
+            {
+                "name": "Girl 5"
+            }
+        ]
+    },
+    {
+        "type": "dorm",
+        "name": "Dorm 2",
+        "gender": "Female",
+        "members": [
+            {
+                "name": "Girl 2"
+            },
+            {
+                "name": "Girl 4"
+            },
+            {
+                "name": "Girl 6"
+            }
+        ]
+    },
+    {
+        "type": "dorm",
+        "name": "Dorm 3",
+        "gender": "Male",
+        "members": [
+            {
+                "name": "Boy 1"
+            },
+            {
+                "name": "Boy 3"
+            },
+            {
+                "name": "Boy 5"
+            }
+        ]
+    },
+    {
+        "type": "dorm",
+        "name": "Dorm 4",
+        "gender": "Male",
+        "members": [
+            {
+                "name": "Boy 2"
+            },
+            {
+                "name": "Boy 4"
+            },
+            {
+                "name": "Boy 6"
+            }
+        ]
+    }
+]
