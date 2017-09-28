@@ -32,6 +32,20 @@ def addMember():
     db.insert({'type': 'member', 'name': member_name, 'gender': member_gender, 'age': member_age, 'talent': member_talent, 'status': 'Pending', 'checkin': False})
     return redirect('/members')
 
+@app.route('/members/checkout', methods=['POST'])
+def checkOutMember():
+    member_name = request.form.getlist('name')[0]
+    Member = Query()
+    db.update({'checkin': False}, Member.name == member_name)
+    return redirect('/members')
+
+@app.route('/members/checkin', methods=['POST'])
+def checkInMember():
+    member_name = request.form.getlist('name')[0]
+    Member = Query()
+    db.update({'checkin': True}, Member.name == member_name)
+    return redirect('/members')
+
 @app.route('/email', methods=['POST'])
 def sendEmail():
     return render_template('email.html')
