@@ -5,6 +5,11 @@
 
     <hr>
     
+    <div style="margin:15px 0px;">
+        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#addMemberModal">
+            Add Member
+        </button>
+    </div>
     <table class="table table-striped">
         <thead class="thead-inverse">
             <tr>
@@ -27,4 +32,53 @@
             {% endfor %}
         </tbody>
     </table>
+
+    <div class="modal fade" id="addMemberModal" tabindex="-1" role="dialog" aria-labelledby="addMemberModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addMemberModalLabel">Add New Member</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form action="{{ url_for('addMember') }}" method="post">
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="inputName">Name</label>
+                            <input type="text" class="form-control" name="name" id="inputName" placeholder="Enter name">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAge">Age</label>
+                            <input type="number" class="form-control" name="age" id="inputAge" placeholder="Enter age">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputGender">Gender</label>
+                            <select class="form-control" name="gender" id="inputGender">
+                                <option value="">Choose gender</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputTalent">Talent</label>
+                            <select class="form-control" name="talent" id="inputTalent">
+                                <option value="">Choose talent</option>
+                                <option value="Singer">Singer</option>
+                                <option value="Guitarist">Guitarist</option>
+                                <option value="Drummer">Drummer</option>
+                                <option value="Bassist">Bassist</option>
+                                <option value="Keyboardist">Keyboardist</option>
+                                <option value="Instrumentalist">Instrumentalist</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <input type="submit" class="btn btn-primary" value="Add Member" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 {% endblock %}
