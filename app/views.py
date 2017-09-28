@@ -31,3 +31,7 @@ def addMember():
     member_talent = request.form.getlist('talent')[0]
     db.insert({'type': 'member', 'name': member_name, 'gender': member_gender, 'age': member_age, 'talent': member_talent, 'status': 'Pending', 'checkin': False})
     return redirect('/members')
+
+@app.route('/email', methods=['POST'])
+def sendEmail():
+    return render_template('email.html')
