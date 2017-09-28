@@ -19,6 +19,7 @@
                 <th>Talent</th>
                 <th>Status</th>
                 <th></th>
+                <th></th>
             </tr>
         </thead>
         <tbody>
@@ -44,6 +45,12 @@
                         </form>
                     </td>
                     {% endif %}
+                    <td>
+                        <form action="{{ url_for('deleteMember') }}" method="post">
+                            <input type="hidden" name="name" value="{{member.name}}" />
+                            <input type="submit" class="btn btn-danger btn-sm" value="Delete" />
+                        </form>
+                    </td>
                 </tr>
             {% endfor %}
         </tbody>
