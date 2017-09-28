@@ -20,6 +20,7 @@
                 <th>Status</th>
                 <th></th>
                 <th></th>
+                <th></th>
             </tr>
         </thead>
         <tbody>
@@ -45,6 +46,12 @@
                         </form>
                     </td>
                     {% endif %}
+                    <td>
+                        <form action="{{ url_for('editMember') }}" method="post">
+                            <input type="hidden" name="name" value="{{member.name}}" />
+                            <input type="submit" class="btn btn-secondary btn-sm" value="Edit" />
+                        </form>
+                    </td>
                     <td>
                         <form action="{{ url_for('deleteMember') }}" method="post">
                             <input type="hidden" name="name" value="{{member.name}}" />
