@@ -1,5 +1,5 @@
 from app import app
-from flask import render_template
+from flask import redirect, render_template, request
 from tinydb import TinyDB, Query
 
 db = TinyDB('../db.json')
@@ -22,3 +22,12 @@ def membersView():
     Entry = Query()
     members = db.search(Entry.type == 'member')
     return render_template('members.html', title='Members', members=members)
+
+@app.route('/members/add', methods=['POST'])
+def addMember():
+    member_name = request.form.getlist('name')[0]
+    member_age = request.form.getlist('age')[0]
+    member_gender = request.form.getlist('gender')[0]
+    member_talent = request.form.getlist('talent')[0]
+    db.insert({'type': 'member', 'name': member_name, 'gender': member_gender, 'age': member_age, 'talent': member_talent, 'status': 'Pending', 'checkin': False})
+    return redirect('/members')
