@@ -47,6 +47,7 @@ This will start the server and the application will be viewable at [http://local
 - Clone this repository to your local machine with the command above and test that your environment can run it without issue before proceeding
 - Once you've selected a user story to work on, be sure to add yourself as a member and move it into the "In Progress" column
 - As you write new code, test it in your local environment and then make any required commits against the master branch
+  - `git add [filenames]`
   - `git commit -m "[UserStory#] - What you changed in the code..."`
 - Once you feel like the user story has been completed, perform a git push against the master branch
   - `git push -u origin master`
