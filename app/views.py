@@ -53,6 +53,22 @@ def checkInMember():
     db.update({'checkin': True}, Member.name == member_name)
     return redirect('/members')
 
+@app.route('/members/edit', methods=['POST'])
+def editMember():
+    member_name = request.form.getlist('name')[0]
+    Member = Query()
+    member = db.search(Member.name == member_name)
+    return render_template('edit-member.html', title='Edit Member', member=member[0])
+
+@app.route('/members/update', methods=['POST'])
+def updateMember():
+    member_age = request.form.getlist('age')[0]
+    member_gender = request.form.getlist('gender')[0]
+    member_talent = request.form.getlist('talent')[0]
+    Member = Query()
+    db.update({'name': member_name, 'gender': member_gender, 'age': member_age, 'talent': member_talent}, Member.name == member_name)
+    return redirect('/members')
+
 @app.route('/email', methods=['POST'])
 def sendEmail():
     return render_template('email.html')
