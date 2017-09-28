@@ -32,6 +32,13 @@ def addMember():
     db.insert({'type': 'member', 'name': member_name, 'gender': member_gender, 'age': member_age, 'talent': member_talent, 'status': 'Pending', 'checkin': False})
     return redirect('/members')
 
+@app.route('/members/delete', methods=['POST'])
+def deleteMember():
+    member_name = request.form.getlist('name')[0]
+    Member = Query()
+    db.remove(Member.name == member_name)
+    return redirect('/members')
+
 @app.route('/members/checkout', methods=['POST'])
 def checkOutMember():
     member_name = request.form.getlist('name')[0]
