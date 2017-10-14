@@ -2,5 +2,23 @@
 {% set active_page = "dorms" %}
 {% block content %}
     <h2>Dorms</h2>
-{% endfor %}
+
+    <hr>
+    
+    {% for dorm in dorms %}
+    <div class="card">
+        <div class="card-header">
+            {{dorm.name}}
+        </div>
+        <div class="card-body">
+            <h4 class="card-title">Members</h4>
+            <ul>
+                {% for member in dorm.members %}
+                    <li>{{member.name}}</li>
+                {% endfor %}
+            </li>
+        </div>
+    </div>
+    <br>
+    {% endfor %}
 {% endblock %}
