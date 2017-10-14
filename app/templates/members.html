@@ -2,9 +2,9 @@
 {% set active_page = "members" %}
 {% block content %}
     <h2>Members</h2>
-
-    <hr>
     
+    <hr>
+
     <div style="margin:15px 0px;">
         <button type="button" class="btn btn-success" data-toggle="modal" data-target="#addMemberModal">
             Add Member
@@ -24,37 +24,39 @@
             </tr>
         </thead>
         <tbody>
-            {% for member in members %}
+            {% set sort_on = request.args.sort_on|default('firstName') %}
+            {% set active_member = request.args.active_member %}
+            {% for member in members|sort(attribute=sort_on) %}
                 <tr>
-                    <td>{{member.name}}</td>
-                    <td>{{member.gender}}</td>
-                    <td>{{member.age}}</td>
-                    <td>{{member.talent}}</td>
-                    <td>{{member.status}}</td>
+                    <td>{{ member.firstName }} {{ member.lastName }}</td>
+                    <td>{{ member.gender }}</td>
+                    <td>{{ member.age }}</td>
+                    <td>{{ member.talent }}</td>
+                    <td>{{ member.status }}</td>
                     {% if member.checkin == false %}
                     <td>
                         <form action="{{ url_for('checkInMember') }}" method="post">
-                            <input type="hidden" name="name" value="{{member.name}}" />
+                            <input type="hidden" name="memberId" value="{{member.memberId}}" />
                             <input type="submit" class="btn btn-success btn-sm" value="Check In" />
                         </form>
                     </td>
                     {% else %}
                     <td>
                         <form action="{{ url_for('checkOutMember') }}" method="post">
-                            <input type="hidden" name="name" value="{{member.name}}" />
+                            <input type="hidden" name="memberId" value="{{member.memberId}}" />
                             <input type="submit" class="btn btn-success btn-sm" value="Check Out" />
                         </form>
                     </td>
                     {% endif %}
                     <td>
                         <form action="{{ url_for('editMember') }}" method="post">
-                            <input type="hidden" name="name" value="{{member.name}}" />
+                            <input type="hidden" name="memberId" value="{{member.memberId}}" />
                             <input type="submit" class="btn btn-secondary btn-sm" value="Edit" />
                         </form>
                     </td>
                     <td>
                         <form action="{{ url_for('deleteMember') }}" method="post">
-                            <input type="hidden" name="name" value="{{member.name}}" />
+                            <input type="hidden" name="memberId" value="{{member.memberId}}" />
                             <input type="submit" class="btn btn-danger btn-sm" value="Delete" />
                         </form>
                     </td>
