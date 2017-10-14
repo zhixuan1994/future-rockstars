@@ -59,18 +59,24 @@ def checkInMember():
 
 @app.route('/members/edit', methods=['POST'])
 def editMember():
-    member_name = request.form.getlist('name')[0]
+    member_id = request.form.getlist('memberId')[0]
     Member = Query()
-    member = db.search(Member.name == member_name)
+    member = db.search(Member.memberId == member_id)
     return render_template('edit-member.html', title='Edit Member', member=member[0])
 
 @app.route('/members/update', methods=['POST'])
 def updateMember():
-    member_age = request.form.getlist('age')[0]
+    member_id = request.form.getlist('memberId')[0]
     member_gender = request.form.getlist('gender')[0]
+    member_age = request.form.getlist('age')[0]
+    member_street = request.form.getlist('street')[0]
+    member_city = request.form.getlist('city')[0]
+    member_state = request.form.getlist('state')[0]
+    member_zipCode = request.form.getlist('zipCode')[0]
     member_talent = request.form.getlist('talent')[0]
+    member_status = request.form.getlist('status')[0]
     Member = Query()
-    db.update({'name': member_name, 'gender': member_gender, 'age': member_age, 'talent': member_talent}, Member.name == member_name)
+    db.update({'gender': member_gender, 'age': member_age, 'street': member_street, 'city': member_city, 'state': member_state, 'zipCode': member_zipCode, 'talent': member_talent, 'status': member_status}, Member.memberId == member_id)
     return redirect('/members')
 
 @app.route('/email', methods=['POST'])

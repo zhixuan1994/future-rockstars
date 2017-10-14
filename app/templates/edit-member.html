@@ -1,23 +1,78 @@
 {% extends "base.html" %}
 {% set active_page = "edit_member" %}
 {% block content %}
-    <h2>Edit {{member.name}}</h2>
+    <h2>{{ member.firstName }} {{ member.lastName }}</h2>
 
-    <form action="{{ url_for('editMember') }}" method="post">
-        <div class="form-group">
-            <label for="inputAge">Age</label>
-            <input type="number" class="form-control" name="age" id="inputAge" value="{{member.age}}">
-        </div>
-        <div class="form-group">
-            <label for="inputGender">Gender</label>
-            <input type="text" class="form-control" name="gender" id="inputGender" value="{{member.gender}}">
-        </div>
-        <div class="form-group">
-            <label for="inputTalent">Talent</label>
-            <input type="text" class="form-control" name="talent" id="inputTalent" value="{{member.talent}}">
-        </div>
+    <hr>
 
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-        <input type="submit" class="btn btn-primary" value="Save Member" />
-    </form>
+    <div class="row">
+        <div class="col-md-4">
+            <form action="{{ url_for('sendEmail') }}" method="post">
+                <input type="hidden" name="memberId" value="{{member.memberId}}" />
+                <input type="hidden" name="type" value="accepted" />
+                <input type="submit" class="btn btn-success btn-block" value="Generate Acceptance Letter" />
+            </form>
+        </div>
+        <div class="col-md-4">
+            <form action="{{ url_for('sendEmail') }}" method="post">
+                <input type="hidden" name="memberId" value="{{member.memberId}}" />
+                <input type="hidden" name="type" value="tryagain" />
+                <input type="submit" class="btn btn-secondary btn-block" value="Generate Try Again Letter" />
+            </form>
+        </div>
+        <div class="col-md-4">
+            <form action="{{ url_for('sendEmail') }}" method="post">
+                <input type="hidden" name="memberId" value="{{member.memberId}}" />
+                <input type="hidden" name="type" value="rejected" />
+                <input type="submit" class="btn btn-danger btn-block" value="Generate Rejection Letter" />
+            </form>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+        <div class="col-md-12">
+            <form action="{{ url_for('updateMember') }}" method="post">
+                <input type="hidden" name="memberId" value="{{member.memberId}}" />
+                <div class="form-group">
+                    <label for="inputGender">Gender</label>
+                    <input type="text" class="form-control" name="gender" id="inputGender" value="{{member.gender}}">
+                </div>
+                <div class="form-group">
+                    <label for="inputAge">Age</label>
+                    <input type="number" class="form-control" name="age" id="inputAge" value="{{member.age}}">
+                </div>
+                <div class="form-group">
+                    <label for="inputStreet">Street</label>
+                    <input type="text" class="form-control" name="street" id="inputStreet" value="{{member.street}}">
+                </div>
+                <div class="form-group">
+                    <label for="inputCity">City</label>
+                    <input type="text" class="form-control" name="city" id="inputCity" value="{{member.city}}">
+                </div>
+                <div class="form-group">
+                    <label for="inputState">State</label>
+                    <input type="text" class="form-control" name="state" id="inputState" value="{{member.state}}">
+                </div>
+                <div class="form-group">
+                    <label for="inputZipCode">ZIP Code</label>
+                    <input type="number" class="form-control" name="zipCode" id="inputZipCode" value="{{member.zipCode}}">
+                </div>
+                <div class="form-group">
+                    <label for="inputTalent">Talent</label>
+                    <input type="text" class="form-control" name="talent" id="inputTalent" value="{{member.talent}}">
+                </div>
+                <div class="form-group">
+                    <label for="inputStatus">Status</label>
+                    <input type="text" class="form-control" name="status" id="inputStatus" value="{{member.status}}">
+                </div>
+
+                <br>
+        
+                <a href="/members" class="btn btn-secondary">Cancel</a>
+                <input type="submit" class="btn btn-primary" value="Save Member" />
+            </form>
+        </div>
+    </div>
 {% endblock %}
