@@ -2,4 +2,38 @@
 {% set active_page = "bands" %}
 {% block content %}
     <h2>Bands</h2>
+
+    <hr>
+    
+    {% for band in bands %}
+        <div class="card">
+            <div class="card-header">
+                {{band.name}}
+            </div>
+            <div class="card-body">
+                <h4 class="card-title">Members</h4>
+                <ul>
+                    <li>
+                        <strong>Singer: </strong> {{band.singer}}
+                    </li>
+                    <li>
+                        <strong>Guitarist: </strong> {{band.guitarist}}
+                    </li>
+                    <li>
+                        <strong>Drummer: </strong> {{band.drummer}}
+                    </li>
+                    <li>
+                        <strong>Bassist: </strong> {{band.bassist}}
+                    </li>
+                    <li>
+                        <strong>Keyboardist: </strong> {{band.keyboardist}}
+                    </li>
+                    <li>
+                        <strong>Instrumentalist: </strong> {{band.instrumentalist}}
+                    </li>
+                </li>
+            </div>
+        </div>
+        <br>
+    {% endfor %}
 {% endblock %}

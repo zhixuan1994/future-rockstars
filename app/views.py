@@ -11,7 +11,9 @@ def indexView():
 
 @app.route('/bands', methods=['GET'])
 def bandsView():
-    return render_template('bands.html', title='Bands')
+    Entry = Query()
+    bands = db.search(Entry.type == 'band')
+    return render_template('bands.html', title='Bands', bands=bands)
 
 @app.route('/dorms', methods=['GET'])
 def dormsView():
