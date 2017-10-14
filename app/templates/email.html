@@ -1,0 +1,76 @@
+<!doctype html>
+<head>
+    <title>{{ title }}: {{ type }} - {{ member.firstName }} {{ member.lastName }}</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+<body style="padding-top:0;">
+    <p>
+        {{ member.firstName }} {{ member.lastName }}<br>
+        {{ member.street }}<br>
+        {{ member.city }}, {{ member.state }} {{ member.zipCode }}
+    </p>
+
+    <p>
+        December 2017
+    </p>
+
+    <p>
+        Dear {{ member.firstName }},
+    </p>
+
+    {% if type == 'accepted' %}
+    <p>
+        Congratulations! You have qualified and been selected to be part of this summer’s Future Rockstars Band Camp. We look forward to personally welcoming you at the orientation scheduled on June 12, 2018 from 8:00 AM to 10:00 AM. You and your guardian will be receiving all the help and information you need to ensure a smooth, comfortable transition into band camp life.         
+    </p>
+    {% elif type == 'tryagain' %}
+    <p>
+        We wanted to inform you that, while your submission was good, unfortunately it was not quite enough to make the cut. Please understand that the competition is stiff and you should be proud to have made it this far. Please take the time to consider re-applying next year.
+    </p>
+    {% elif type == 'rejected' %}
+    <p>
+        Unfortunately, your submission did not make the cut for this camp. Do not take this personally as our program is not geared towards everyone and it may simply not be a good fit for your talents. We wish you the best of luck in your future endeavors. 
+    </p>
+    {% endif %}
+
+    {% if type == 'accepted' %}
+    <p>
+        We would like to remind you to make sure you bring the following when you arrive at camp to avoid any problems with the registration process:
+    </p>
+    <ol>
+        {% if member.talent == 'Singer' %}
+        <li>Your voice</li>
+        {% else %}
+        <li>Your instrument</li>
+        {% endif %}
+        <li>Your paperwork</li>
+        <li>Yourself</li>
+    </ol>
+    {% endif %}
+
+    {% if type == 'accepted' %}
+    <p>
+        Once again, Congratulations! We look forward to meeting you. 
+    </p>
+    {% elif type == 'tryagain' %}
+    <p>
+        Once again, please take the time to reach out and try again next year. 
+    </p>
+    {% elif type == 'rejected' %}
+    <p>
+        Once again, we apologize and thank you for your submission.
+    </p>
+    {% endif %}
+
+    <p>
+        Sincerely yours, <br>
+        Director of Future Rockstars
+    </p>
+
+    <div class="no-print">
+        <hr>
+        <button onclick="window.print();">Print this letter</button>
+        <br>
+        <br>
+        <a href="/members">Return to Members List</a>
+    </div>
+</body>

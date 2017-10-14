@@ -79,6 +79,10 @@ def updateMember():
     db.update({'gender': member_gender, 'age': member_age, 'street': member_street, 'city': member_city, 'state': member_state, 'zipCode': member_zipCode, 'talent': member_talent, 'status': member_status}, Member.memberId == member_id)
     return redirect('/members')
 
-@app.route('/email', methods=['POST'])
+@app.route('/email/send', methods=['POST'])
 def sendEmail():
-    return render_template('email.html')
+    member_id = request.form.getlist('memberId')[0]
+    email_type = request.form.getlist('type')[0]
+    Member = Query()
+    member = db.search(Member.memberId == member_id)
+    return render_template('email.html', title="Email Template", type=email_type, member=member[0])
