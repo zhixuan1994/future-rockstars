@@ -29,32 +29,32 @@ def membersView():
 
 @app.route('/members/add', methods=['POST'])
 def addMember():
-    member_name = request.form.getlist('name')[0]
+    member_firstName = request.form.getlist('name')[0]
     member_age = request.form.getlist('age')[0]
     member_gender = request.form.getlist('gender')[0]
     member_talent = request.form.getlist('talent')[0]
-    db.insert({'type': 'member', 'name': member_name, 'gender': member_gender, 'age': member_age, 'talent': member_talent, 'status': 'Pending', 'checkin': False})
+    db.insert({'type': 'member', 'firstName': member_firstName, 'gender': member_gender, 'age': member_age, 'talent': member_talent, 'status': 'Pending', 'checkin': False})
     return redirect('/members')
 
 @app.route('/members/delete', methods=['POST'])
 def deleteMember():
-    member_name = request.form.getlist('name')[0]
+    member_id = request.form.getlist('memberId')[0]
     Member = Query()
-    db.remove(Member.name == member_name)
+    db.remove(Member.memberId == member_id)
     return redirect('/members')
 
 @app.route('/members/checkout', methods=['POST'])
 def checkOutMember():
-    member_name = request.form.getlist('name')[0]
+    member_id = request.form.getlist('memberId')[0]
     Member = Query()
-    db.update({'checkin': False}, Member.name == member_name)
+    db.update({'checkin': False}, Member.memberId == member_id)
     return redirect('/members')
 
 @app.route('/members/checkin', methods=['POST'])
 def checkInMember():
-    member_name = request.form.getlist('name')[0]
+    member_id = request.form.getlist('memberId')[0]
     Member = Query()
-    db.update({'checkin': True}, Member.name == member_name)
+    db.update({'checkin': True}, Member.memberId == member_id)
     return redirect('/members')
 
 @app.route('/members/edit', methods=['POST'])
