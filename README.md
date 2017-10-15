@@ -27,9 +27,9 @@ First, we will want to clone this repository to our local machines. To do this, 
 
 Now, enter `cd future-rockstars` and then run the following commands to get a Python 3.6 environment configured to run the application in:
 
-- `pyvenv-3.6 env`
-
-- `source env/bin/activate`
+- `virtualenv env`
+- On macOS/Linux: `source env/bin/activate` 
+- On Windows: `env\Scripts\activate.bat`
 
 Now, when you look at your Command Prompt or terminal and you should see `(env)` in the prompt. This means that the Python environment has been activated and you can begin
 installing dependencies for the project. For our purposes, all of our dependencies are stored in the `requirements.txt` file and can be installed by running the following: 
