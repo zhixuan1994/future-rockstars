@@ -1,5 +1,6 @@
 from app import app
-from flask import redirect, render_template, request
+from flask import render_template, redirect, request
+from random import *
 from tinydb import TinyDB, Query
 
 db = TinyDB('../db.json')
@@ -29,11 +30,33 @@ def membersView():
 
 @app.route('/members/add', methods=['POST'])
 def addMember():
-    member_firstName = request.form.getlist('name')[0]
-    member_age = request.form.getlist('age')[0]
+    member_id = randint(50, 500)
+    member_firstName = request.form.getlist('firstName')[0]
+    member_lastName = request.form.getlist('lastName')[0]
     member_gender = request.form.getlist('gender')[0]
+    member_age = request.form.getlist('age')[0]
+    member_street = request.form.getlist('street')[0]
+    member_city = request.form.getlist('city')[0]
+    member_state = request.form.getlist('state')[0]
+    member_zipCode = request.form.getlist('zipCode')[0]
     member_talent = request.form.getlist('talent')[0]
-    db.insert({'type': 'member', 'firstName': member_firstName, 'gender': member_gender, 'age': member_age, 'talent': member_talent, 'status': 'Pending', 'checkin': False})
+    db.insert({
+        'memberId': member_id,
+        'type': 'member', 
+        'firstName': member_firstName,
+        'lastName': member_lastName, 
+        'gender': member_gender, 
+        'age': member_age, 
+        'street': member_street, 
+        'city': member_city,
+        'state': member_state,
+        'zipCode': member_zipCode,
+        'talent': member_talent,
+        'status': 'Pending',
+        'checkin': False,
+        'forms': False,
+        'payment': False
+    })
     return redirect('/members')
 
 @app.route('/members/delete', methods=['POST'])
@@ -75,8 +98,23 @@ def updateMember():
     member_zipCode = request.form.getlist('zipCode')[0]
     member_talent = request.form.getlist('talent')[0]
     member_status = request.form.getlist('status')[0]
+    member_checkin = request.form.getlist('checkin')[0]
+    member_forms = request.form.getlist('forms')[0]
+    member_payment = request.forms.getlist('payment')[0]
     Member = Query()
-    db.update({'gender': member_gender, 'age': member_age, 'street': member_street, 'city': member_city, 'state': member_state, 'zipCode': member_zipCode, 'talent': member_talent, 'status': member_status}, Member.memberId == member_id)
+    db.update({
+        'gender': member_gender, 
+        'age': member_age, 
+        'street': member_street, 
+        'city': member_city, 
+        'state': member_state, 
+        'zipCode': member_zipCode, 
+        'talent': member_talent, 
+        'status': member_status,
+        'checkin': member_checkin,
+        'forms': member_forms,
+        'payment': member_payment
+    }, Member.memberId == member_id)
     return redirect('/members')
 
 @app.route('/email/send', methods=['POST'])
