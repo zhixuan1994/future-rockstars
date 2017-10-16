@@ -12,7 +12,9 @@
         "zipCode": 85256,
         "talent": "Singer",
         "status": "Pending",
-        "checkin": false
+        "checkin": false,
+        "forms": false,
+        "payment": false
     },
     {
         "memberId": "2",
@@ -27,7 +29,9 @@
         "zipCode": 2141,
         "talent": "Guitarist",
         "status": "Pending",
-        "checkin": false
+        "checkin": false,
+        "forms": false,
+        "payment": false
     },
     {
         "memberId": "3",
@@ -42,7 +46,9 @@
         "zipCode": 57104,
         "talent": "Drummer",
         "status": "Pending",
-        "checkin": false
+        "checkin": false,
+        "forms": false,
+        "payment": false
     },
     {
         "memberId": "4",
@@ -57,7 +63,9 @@
         "zipCode": 22903,
         "talent": "Bassist",
         "status": "Pending",
-        "checkin": false
+        "checkin": false,
+        "forms": false,
+        "payment": false
     },
     {
         "memberId": "5",
@@ -72,7 +80,9 @@
         "zipCode": 55369,
         "talent": "Keyboardist",
         "status": "Pending",
-        "checkin": false
+        "checkin": false,
+        "forms": false,
+        "payment": false
     },
     {
         "memberId": "6",
@@ -87,7 +97,9 @@
         "zipCode": 30091,
         "talent": "Instrumentalist",
         "status": "Pending",
-        "checkin": false
+        "checkin": false,
+        "forms": false,
+        "payment": false
     },
     {
         "memberId": "7",
@@ -102,7 +114,9 @@
         "zipCode": 35216,
         "talent": "Singer",
         "status": "Pending",
-        "checkin": false
+        "checkin": false,
+        "forms": false,
+        "payment": false
     },
     {
         "memberId": "8",
@@ -117,7 +131,9 @@
         "zipCode": 60148,
         "talent": "Guitarist",
         "status": "Pending",
-        "checkin": false
+        "checkin": false,
+        "forms": false,
+        "payment": false
     },
     {
         "memberId": "9",
@@ -132,7 +148,9 @@
         "zipCode": 35816,
         "talent": "Drummer",
         "status": "Pending",
-        "checkin": false
+        "checkin": false,
+        "forms": false,
+        "payment": false
     },
     {
         "memberId": "10",
@@ -147,7 +165,9 @@
         "zipCode": 92233,
         "talent": "Bassist",
         "status": "Pending",
-        "checkin": false
+        "checkin": false,
+        "forms": false,
+        "payment": false
     },
     {
         "memberId": "11",
@@ -162,7 +182,9 @@
         "zipCode": 90706,
         "talent": "Keyboardist",
         "status": "Pending",
-        "checkin": false
+        "checkin": false,
+        "forms": false,
+        "payment": false
     },
     {
         "memberId": "12",
@@ -177,7 +199,9 @@
         "zipCode": 98444,
         "talent": "Instrumentalist",
         "status": "Pending",
-        "checkin": false
+        "checkin": false,
+        "forms": false,
+        "payment": false
     },
     {
         "memberId": "13",
@@ -192,7 +216,9 @@
         "zipCode": 98161,
         "talent": "Singer",
         "status": "Pending",
-        "checkin": false
+        "checkin": false,
+        "forms": false,
+        "payment": false
     },
     {
         "memberId": "14",
@@ -207,7 +233,9 @@
         "zipCode": 79756,
         "talent": "Guitarist",
         "status": "Pending",
-        "checkin": false
+        "checkin": false,
+        "forms": false,
+        "payment": false
     },
     {
         "memberId": "15",
@@ -222,7 +250,9 @@
         "zipCode": 60457,
         "talent": "Drummer",
         "status": "Pending",
-        "checkin": false
+        "checkin": false,
+        "forms": false,
+        "payment": false
     },
     {
         "memberId": "16",
@@ -237,7 +267,9 @@
         "zipCode": 28704,
         "talent": "Bassist",
         "status": "Pending",
-        "checkin": false
+        "checkin": false,
+        "forms": false,
+        "payment": false
     },
     {
         "memberId": "17",
@@ -252,7 +284,9 @@
         "zipCode": 8854,
         "talent": "Keyboardist",
         "status": "Pending",
-        "checkin": false
+        "checkin": false,
+        "forms": false,
+        "payment": false
     },
     {
         "memberId": "18",
@@ -267,7 +301,9 @@
         "zipCode": 6410,
         "talent": "Instrumentalist",
         "status": "Pending",
-        "checkin": false
+        "checkin": false,
+        "forms": false,
+        "payment": false
     },
     {
         "memberId": "19",
@@ -282,7 +318,9 @@
         "zipCode": 76901,
         "talent": "Singer",
         "status": "Pending",
-        "checkin": false
+        "checkin": false,
+        "forms": false,
+        "payment": false
     },
     {
         "memberId": "20",
@@ -297,7 +335,9 @@
         "zipCode": 27203,
         "talent": "Guitarist",
         "status": "Pending",
-        "checkin": false
+        "checkin": false,
+        "forms": false,
+        "payment": false
     },
     {
         "memberId": "21",
@@ -312,12 +352,14 @@
         "zipCode": 8102,
         "talent": "Drummer",
         "status": "Pending",
-        "checkin": false
+        "checkin": false,
+        "forms": false,
+        "payment": false
     },
     {
         "memberId": "22",
         "type": "member",
-        "firstName": "Sammy",
+        "firstName": "Katie",
         "lastName": "Evans",
         "gender": "female",
         "age": 18,
@@ -327,12 +369,14 @@
         "zipCode": 45680,
         "talent": "Bassist",
         "status": "Pending",
-        "checkin": false
+        "checkin": false,
+        "forms": false,
+        "payment": false
     },
     {
         "memberId": "23",
         "type": "member",
-        "firstName": "Katie",
+        "firstName": "Ashley",
         "lastName": "Lindley",
         "gender": "female",
         "age": 15,
@@ -342,12 +386,14 @@
         "zipCode": 32501,
         "talent": "Keyboardist",
         "status": "Pending",
-        "checkin": false
+        "checkin": false,
+        "forms": false,
+        "payment": false
     },
     {
         "memberId": "24",
         "type": "member",
-        "firstName": "Jasmine",
+        "firstName": "Jamie",
         "lastName": "Barnes",
         "gender": "female",
         "age": 16,
@@ -357,7 +403,9 @@
         "zipCode": 90031,
         "talent": "Instrumentalist",
         "status": "Pending",
-        "checkin": false
+        "checkin": false,
+        "forms": false,
+        "payment": false
     },
     {
         "memberId": "25",
@@ -372,7 +420,9 @@
         "zipCode": 80112,
         "talent": "Singer",
         "status": "Pending",
-        "checkin": false
+        "checkin": false,
+        "forms": false,
+        "payment": false
     },
     {
         "memberId": "26",
@@ -387,7 +437,9 @@
         "zipCode": 33940,
         "talent": "Guitarist",
         "status": "Pending",
-        "checkin": false
+        "checkin": false,
+        "forms": false,
+        "payment": false
     },
     {
         "memberId": "27",
@@ -402,7 +454,9 @@
         "zipCode": 50206,
         "talent": "Drummer",
         "status": "Pending",
-        "checkin": false
+        "checkin": false,
+        "forms": false,
+        "payment": false
     },
     {
         "memberId": "28",
@@ -417,7 +471,9 @@
         "zipCode": 80903,
         "talent": "Bassist",
         "status": "Pending",
-        "checkin": false
+        "checkin": false,
+        "forms": false,
+        "payment": false
     },
     {
         "memberId": "29",
@@ -432,7 +488,9 @@
         "zipCode": 73107,
         "talent": "Keyboardist",
         "status": "Pending",
-        "checkin": false
+        "checkin": false,
+        "forms": false,
+        "payment": false
     },
     {
         "memberId": "30",
@@ -447,7 +505,9 @@
         "zipCode": 32751,
         "talent": "Instrumentalist",
         "status": "Pending",
-        "checkin": false
+        "checkin": false,
+        "forms": false,
+        "payment": false
     },
     {
         "memberId": "31",
@@ -462,7 +522,9 @@
         "zipCode": 65401,
         "talent": "Singer",
         "status": "Pending",
-        "checkin": false
+        "checkin": false,
+        "forms": false,
+        "payment": false
     },
     {
         "memberId": "32",
@@ -477,7 +539,9 @@
         "zipCode": 79762,
         "talent": "Guitarist",
         "status": "Pending",
-        "checkin": false
+        "checkin": false,
+        "forms": false,
+        "payment": false
     },
     {
         "memberId": "33",
@@ -485,14 +549,16 @@
         "firstName": "Thomas",
         "lastName": "Martinez",
         "gender": "male",
-        "age": 14,
+        "age": 18,
         "street": "2443 Riverwood Drive",
         "city": "Chico",
         "state": "CA",
         "zipCode": 95926,
         "talent": "Drummer",
         "status": "Pending",
-        "checkin": false
+        "checkin": false,
+        "forms": false,
+        "payment": false
     },
     {
         "memberId": "34",
@@ -500,14 +566,16 @@
         "firstName": "Gary",
         "lastName": "Worthington",
         "gender": "male",
-        "age": 16,
+        "age": 13,
         "street": "1696 Prospect Street",
         "city": "Camden",
         "state": "NJ",
         "zipCode": 8102,
         "talent": "Bassist",
         "status": "Pending",
-        "checkin": false
+        "checkin": false,
+        "forms": false,
+        "payment": false
     },
     {
         "memberId": "35",
@@ -515,14 +583,16 @@
         "firstName": "Philip",
         "lastName": "Gibbons",
         "gender": "male",
-        "age": 17,
+        "age": 14,
         "street": "1957 Cherry Ridge Drive",
         "city": "Cuba",
         "state": "NY",
         "zipCode": 14727,
         "talent": "Keyboardist",
         "status": "Pending",
-        "checkin": false
+        "checkin": false,
+        "forms": false,
+        "payment": false
     },
     {
         "memberId": "36",
@@ -530,14 +600,16 @@
         "firstName": "Eric",
         "lastName": "Wilkins",
         "gender": "male",
-        "age": 17,
+        "age": 15,
         "street": "3160 Fittro Street",
         "city": "Lockesburg",
         "state": "AR",
         "zipCode": 71846,
         "talent": "Instrumentalist",
         "status": "Pending",
-        "checkin": false
+        "checkin": false,
+        "forms": false,
+        "payment": false
     },
     {
         "memberId": "37",
@@ -552,7 +624,9 @@
         "zipCode": 23707,
         "talent": "Singer",
         "status": "Pending",
-        "checkin": false
+        "checkin": false,
+        "forms": false,
+        "payment": false
     },
     {
         "memberId": "38",
@@ -567,7 +641,9 @@
         "zipCode": 10016,
         "talent": "Guitarist",
         "status": "Pending",
-        "checkin": false
+        "checkin": false,
+        "forms": false,
+        "payment": false
     },
     {
         "memberId": "39",
@@ -582,7 +658,9 @@
         "zipCode": 98612,
         "talent": "Drummer",
         "status": "Pending",
-        "checkin": false
+        "checkin": false,
+        "forms": false,
+        "payment": false
     },
     {
         "memberId": "40",
@@ -597,7 +675,9 @@
         "zipCode": 38141,
         "talent": "Bassist",
         "status": "Pending",
-        "checkin": false
+        "checkin": false,
+        "forms": false,
+        "payment": false
     },
     {
         "memberId": "41",
@@ -612,7 +692,9 @@
         "zipCode": 61701,
         "talent": "Keyboardist",
         "status": "Pending",
-        "checkin": false
+        "checkin": false,
+        "forms": false,
+        "payment": false
     },
     {
         "memberId": "42",
@@ -627,7 +709,9 @@
         "zipCode": 79701,
         "talent": "Instrumentalist",
         "status": "Pending",
-        "checkin": false
+        "checkin": false,
+        "forms": false,
+        "payment": false
     },
     {
         "memberId": "43",
@@ -642,7 +726,9 @@
         "zipCode": 70810,
         "talent": "Singer",
         "status": "Pending",
-        "checkin": false
+        "checkin": false,
+        "forms": false,
+        "payment": false
     },
     {
         "memberId": "44",
@@ -657,7 +743,9 @@
         "zipCode": 33024,
         "talent": "Guitarist",
         "status": "Pending",
-        "checkin": false
+        "checkin": false,
+        "forms": false,
+        "payment": false
     },
     {
         "memberId": "45",
@@ -672,7 +760,9 @@
         "zipCode": 98188,
         "talent": "Drummer",
         "status": "Pending",
-        "checkin": false
+        "checkin": false,
+        "forms": false,
+        "payment": false
     },
     {
         "memberId": "46",
@@ -687,7 +777,9 @@
         "zipCode": 7304,
         "talent": "Bassist",
         "status": "Pending",
-        "checkin": false
+        "checkin": false,
+        "forms": false,
+        "payment": false
     },
     {
         "memberId": "47",
@@ -702,7 +794,9 @@
         "zipCode": 60605,
         "talent": "Keyboardist",
         "status": "Pending",
-        "checkin": false
+        "checkin": false,
+        "forms": false,
+        "payment": false
     },
     {
         "memberId": "48",
@@ -717,6 +811,8 @@
         "zipCode": 76102,
         "talent": "Instrumentalist",
         "status": "Pending",
-        "checkin": false
+        "checkin": false,
+        "forms": false,
+        "payment": false
     }
 ]

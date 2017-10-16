@@ -1,66 +1,92 @@
 [
     {
+        "name": "boy-dorm 0",
         "type": "dorm",
-        "name": "Dorm 1",
-        "gender": "Female",
-        "members": [
-            {
-                "name": "Girl 1"
-            },
-            {
-                "name": "Girl 3"
-            },
-            {
-                "name": "Girl 5"
-            }
-        ]
-    },
-    {
-        "type": "dorm",
-        "name": "Dorm 2",
-        "gender": "Female",
-        "members": [
-            {
-                "name": "Girl 2"
-            },
-            {
-                "name": "Girl 4"
-            },
-            {
-                "name": "Girl 6"
-            }
-        ]
-    },
-    {
-        "type": "dorm",
-        "name": "Dorm 3",
         "gender": "Male",
         "members": [
-            {
-                "name": "Boy 1"
-            },
-            {
-                "name": "Boy 3"
-            },
-            {
-                "name": "Boy 5"
-            }
+            "2513 Fredrick Beaird",
+            "2617 Daniel Devine",
+            "3413 Gary Worthington",
+            "3318 Thomas Martinez",
+            "4514 Ben Thomas",
+            "4217 John Crosby",
+            "3615 Eric Wilkins",
+            "4415 Michael Benefield"
         ]
     },
     {
+        "name": "boy-dorm 1",
         "type": "dorm",
-        "name": "Dorm 4",
         "gender": "Male",
         "members": [
-            {
-                "name": "Boy 2"
-            },
-            {
-                "name": "Boy 4"
-            },
-            {
-                "name": "Boy 6"
-            }
+            "2814 Kenneth Houston",
+            "2717 Christopher Riley",
+            "3514 Philip Gibbons",
+            "3717 John Davis",
+            "3016 Brendan Dixon",
+            "4317 Charles Glass",
+            "4015 Patrick Kelly",
+            "4615 Lawrence Griffin"
+        ]
+    },
+    {
+        "name": "boy-dorm 2",
+        "type": "dorm",
+        "gender": "Male",
+        "members": [
+            "3214 Patrick Fernandez",
+            "2918 Michael Reedy",
+            "3914 Terry Davis",
+            "3817 Timothy Lathan",
+            "3116 Rodney Powers",
+            "4717 Henry Denis",
+            "4115 James Wilson",
+            "4816 Michael Stewart"
+        ]
+    },
+    {
+        "name": "girl-dorm 0",
+        "type": "dorm",
+        "gender": "Female",
+        "members": [
+            "414 Leigh Weston",
+            "118 Amanda Sullivan",
+            "713 Sharon Gonzales",
+            "1317 Kayla Grimes",
+            "1113 Estella Robinson",
+            "2117 Gracie Thompson",
+            "915 Angela Palmer",
+            "1915 Courtney Boyd"
+        ]
+    },
+    {
+        "name": "girl-dorm 1",
+        "type": "dorm",
+        "gender": "Female",
+        "members": [
+            "513 Shirley Keller",
+            "318 Kristen Rasch",
+            "814 Kathy Boer",
+            "1417 Elsie Conner",
+            "1614 Stephanie Romero",
+            "2218 Katie Evans",
+            "1716 Loretta Marr",
+            "2315 Ashley Lindley"
+        ]
+    },
+    {
+        "name": "girl-dorm 2",
+        "type": "dorm",
+        "gender": "Female",
+        "members": [
+            "613 Francine Kendrick",
+            "1218 Dianne Ung",
+            "1013 Sara Meier",
+            "1517 Hayley Trimble",
+            "2014 Joetta Linville",
+            "216 Melinda Motto",
+            "1815 Elizabeth Sanchez",
+            "2416 Jamie Barnes"
         ]
     }
 ]
