@@ -38,7 +38,8 @@ installing dependencies for the project. For our purposes, all of our dependenci
 
 You now have all of the application code, Python environment, and application package dependencies installed. To make sure that the application is working, run the following command:
 
-- `./run.py`
+- `python ./run.py`
+  - Note: If you run into permissions issues, run the following and then retry: `sudo chmod 755 ./run.py`
 
 This will start the server and the application will be viewable at [http://localhost:5000](http://localhost:5000).
 
