@@ -18,6 +18,8 @@
                 <th>Age</th>
                 <th>Talent</th>
                 <th>Status</th>
+                <th>Forms</th>
+                <th>Payment</th>
                 <th></th>
                 <th></th>
             </tr>
@@ -32,6 +34,16 @@
                     <td>{{ member.age }}</td>
                     <td>{{ member.talent }}</td>
                     <td>{{ member.status }}</td>
+                    {% if member.forms == false %}
+                    <td>No</td>
+                    {% else %}
+                    <td>Yes</td>
+                    {% endif %}
+                    {% if member.payment == false %}
+                    <td>No</td>
+                    {% else %}
+                    <td>Yes</td>
+                    {% endif %}
                     {% if member.checkin == false %}
                     <td>
                         <form action="{{ url_for('checkInMember') }}" method="post">
