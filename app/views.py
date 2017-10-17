@@ -13,13 +13,49 @@ def indexView():
 @app.route('/bands', methods=['GET'])
 def bandsView():
     Entry = Query()
-    bands = db.search(Entry.type == 'band')
+    rawBands = db.search(Entry.type == 'band')
+    bands = []
+    
+    for b in rawBands:
+        band = dict(b)
+        band['name'] = band['name'].split()
+        band['name'] = 'Band ' + str(int(band['name'][1]) + 1)
+        band['singer'] = band['singer'].split()
+        band['singer'] = band['singer'][1] + ' ' + band['singer'][2]
+        band['guitarist'] = band['guitarist'].split()
+        band['guitarist'] = band['guitarist'][1] + ' ' + band['guitarist'][2]
+        band['drummer'] = band['drummer'].split()
+        band['drummer'] = band['drummer'][1] + ' ' + band['drummer'][2]
+        band['bassist'] = band['bassist'].split()
+        band['bassist'] = band['bassist'][1] + ' ' + band['bassist'][2]
+        band['keyboardist'] = band['keyboardist'].split()
+        band['keyboardist'] = band['keyboardist'][1] + ' ' + band['keyboardist'][2]
+        band['instrumentalist'] = band['instrumentalist'].split()
+        band['instrumentalist'] = band['instrumentalist'][1] + ' ' + band['instrumentalist'][2]
+        bands.append(band)
+
     return render_template('bands.html', title='Bands', bands=bands)
 
 @app.route('/dorms', methods=['GET'])
 def dormsView():
     Entry = Query()
-    dorms = db.search(Entry.type == 'dorm')
+    rawDorms = db.search(Entry.type == 'dorm')
+    dorms = []
+
+    for d in rawDorms:
+        dorm = dict(d)
+        dorm['name'] = dorm['name'].split()
+        dorm['name'] = 'Dorm ' + str(int(dorm['name'][1]) + 1)
+        if dorm['gender'] == 'male':
+            dorm['gender'] == 'Male'
+        else:
+            dorm['gender'] == 'Female'
+        for i, m in enumerate(dorm['members']):
+            member = dorm['members'][i].split()
+            member = member[1] + ' ' + member[2]
+            dorm['members'][i] = member
+        dorms.append(dorm)
+    
     return render_template('dorms.html', title='Dorms', dorms=dorms)
 
 @app.route('/members', methods=['GET'])
