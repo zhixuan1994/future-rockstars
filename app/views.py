@@ -134,9 +134,9 @@ def updateMember():
     member_zipCode = request.form.getlist('zipCode')[0]
     member_talent = request.form.getlist('talent')[0]
     member_status = request.form.getlist('status')[0]
-    member_checkin = request.form.getlist('checkin')[0]
-    member_forms = request.form.getlist('forms')[0]
-    member_payment = request.forms.getlist('payment')[0]
+    #member_checkin = request.form.getlist('checkin')[0]
+    #member_forms = request.form.getlist('forms')[0]
+    #member_payment = request.forms.getlist('payment')[0]
     member_comments = request.forms.getlist('comments')[0]
     Member = Query()
     db.update({
@@ -148,9 +148,9 @@ def updateMember():
         'zipCode': member_zipCode, 
         'talent': member_talent, 
         'status': member_status,
-        'checkin': member_checkin,
-        'forms': member_forms,
-        'payment': member_payment,
+        #'checkin': member_checkin,
+        #'forms': member_forms,
+        #'payment': member_payment,
         'comments': member_comments
     }, Member.memberId == member_id)
     return redirect('/members')
