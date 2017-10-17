@@ -1,5 +1,9 @@
+import os
 import unittest
+from app import app
 
-class UnitTests( unittest.TestCase ):
-    
-    def test_can_do_something(self):
+class TestCase(unittest.TestCase):
+    def test_routes(self):
+
+if __name__ == '__main__':
+    unittest.main()
