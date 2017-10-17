@@ -136,8 +136,8 @@ def updateMember():
     member_status = request.form.getlist('status')[0]
     #member_checkin = request.form.getlist('checkin')[0]
     #member_forms = request.form.getlist('forms')[0]
-    #member_payment = request.forms.getlist('payment')[0]
-    member_comments = request.forms.getlist('comments')[0]
+    #member_payment = request.form.getlist('payment')[0]
+    member_comments = request.form.getlist('comments')[0]
     Member = Query()
     db.update({
         'gender': member_gender, 
