@@ -137,6 +137,7 @@ def updateMember():
     member_checkin = request.form.getlist('checkin')[0]
     member_forms = request.form.getlist('forms')[0]
     member_payment = request.forms.getlist('payment')[0]
+    member_comments = request.forms.getlist('comments')[0]
     Member = Query()
     db.update({
         'gender': member_gender, 
@@ -149,7 +150,8 @@ def updateMember():
         'status': member_status,
         'checkin': member_checkin,
         'forms': member_forms,
-        'payment': member_payment
+        'payment': member_payment,
+        'comments': member_comments
     }, Member.memberId == member_id)
     return redirect('/members')
 
