@@ -6,7 +6,7 @@
     <hr>
 
     <div style="margin:15px 0px;">
-        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#addMemberModal">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addMemberModal">
             Add Member
         </button>
     </div>
@@ -55,7 +55,7 @@
                     <td>
                         <form action="{{ url_for('checkOutMember') }}" method="post">
                             <input type="hidden" name="memberId" value="{{member.memberId}}" />
-                            <input type="submit" class="btn btn-success btn-sm" value="Check Out" />
+                            <input type="submit" class="btn btn-danger btn-sm" value="Check Out" />
                         </form>
                     </td>
                     {% endif %}
