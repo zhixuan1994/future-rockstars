@@ -162,3 +162,12 @@ def sendEmail():
     Member = Query()
     member = db.search(Member.memberId == member_id)
     return render_template('email.html', title="Email Template", type=email_type, member=member[0])
+
+# Custom error handling
+@app.errorhandler(404)
+def notFoundError(error):
+    return render_template('404.html'), 404
+
+@app.errorhandler(500)
+def internalError(error):
+    return render_template('500.html'), 500
