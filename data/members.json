@@ -11,6 +11,7 @@
         "state": "AZ",
         "zipCode": 85256,
         "talent": "Singer",
+        "trank":1,
         "status": "Pending",
         "checkin": false,
         "forms": false,
@@ -31,7 +32,9 @@
         "status": "Pending",
         "checkin": false,
         "forms": false,
+        "trank":1,
         "payment": false
+        
     },
     {
         "memberId": "3",
@@ -48,6 +51,7 @@
         "status": "Pending",
         "checkin": false,
         "forms": false,
+        "trank":2,
         "payment": false
     },
     {
@@ -65,6 +69,7 @@
         "status": "Pending",
         "checkin": false,
         "forms": false,
+        "trank":2,
         "payment": false
     },
     {
@@ -82,6 +87,7 @@
         "status": "Pending",
         "checkin": false,
         "forms": false,
+        "trank":3,
         "payment": false
     },
     {
@@ -99,6 +105,7 @@
         "status": "Pending",
         "checkin": false,
         "forms": false,
+        "trank":3,
         "payment": false
     },
     {
@@ -116,6 +123,7 @@
         "status": "Pending",
         "checkin": false,
         "forms": false,
+        "trank":4,
         "payment": false
     },
     {
@@ -133,6 +141,7 @@
         "status": "Pending",
         "checkin": false,
         "forms": false,
+        "trank":4,
         "payment": false
     },
     {
@@ -150,6 +159,7 @@
         "status": "Pending",
         "checkin": false,
         "forms": false,
+        "trank":1,
         "payment": false
     },
     {
@@ -167,6 +177,7 @@
         "status": "Pending",
         "checkin": false,
         "forms": false,
+        "trank":1,
         "payment": false
     },
     {
@@ -184,6 +195,7 @@
         "status": "Pending",
         "checkin": false,
         "forms": false,
+        "trank":2,
         "payment": false
     },
     {
@@ -201,6 +213,7 @@
         "status": "Pending",
         "checkin": false,
         "forms": false,
+        "trank":2,
         "payment": false
     },
     {
@@ -218,6 +231,7 @@
         "status": "Pending",
         "checkin": false,
         "forms": false,
+        "trank":3,
         "payment": false
     },
     {
@@ -235,6 +249,7 @@
         "status": "Pending",
         "checkin": false,
         "forms": false,
+        "trank":3,
         "payment": false
     },
     {
@@ -252,6 +267,7 @@
         "status": "Pending",
         "checkin": false,
         "forms": false,
+        "trank":4,
         "payment": false
     },
     {
@@ -269,6 +285,7 @@
         "status": "Pending",
         "checkin": false,
         "forms": false,
+        "trank":4,
         "payment": false
     },
     {
@@ -286,6 +303,7 @@
         "status": "Pending",
         "checkin": false,
         "forms": false,
+        "trank":1,
         "payment": false
     },
     {
@@ -303,6 +321,7 @@
         "status": "Pending",
         "checkin": false,
         "forms": false,
+        "trank":1,
         "payment": false
     },
     {
@@ -320,6 +339,7 @@
         "status": "Pending",
         "checkin": false,
         "forms": false,
+        "trank":2,
         "payment": false
     },
     {
@@ -337,6 +357,7 @@
         "status": "Pending",
         "checkin": false,
         "forms": false,
+        "trank":2,
         "payment": false
     },
     {
@@ -354,6 +375,7 @@
         "status": "Pending",
         "checkin": false,
         "forms": false,
+        "trank":3,
         "payment": false
     },
     {
@@ -371,6 +393,7 @@
         "status": "Pending",
         "checkin": false,
         "forms": false,
+        "trank":3,
         "payment": false
     },
     {
@@ -388,6 +411,7 @@
         "status": "Pending",
         "checkin": false,
         "forms": false,
+        "trank":4,
         "payment": false
     },
     {
@@ -405,6 +429,7 @@
         "status": "Pending",
         "checkin": false,
         "forms": false,
+        "trank":4,
         "payment": false
     },
     {
@@ -422,6 +447,7 @@
         "status": "Pending",
         "checkin": false,
         "forms": false,
+        "trank":1,
         "payment": false
     },
     {
@@ -439,6 +465,7 @@
         "status": "Pending",
         "checkin": false,
         "forms": false,
+        "trank":1,
         "payment": false
     },
     {
@@ -456,6 +483,7 @@
         "status": "Pending",
         "checkin": false,
         "forms": false,
+        "trank":2, 
         "payment": false
     },
     {
@@ -473,6 +501,7 @@
         "status": "Pending",
         "checkin": false,
         "forms": false,
+        "trank":2,
         "payment": false
     },
     {
@@ -490,6 +519,7 @@
         "status": "Pending",
         "checkin": false,
         "forms": false,
+        "trank":2,
         "payment": false
     },
     {
@@ -507,6 +537,7 @@
         "status": "Pending",
         "checkin": false,
         "forms": false,
+        "trank":3,
         "payment": false
     },
     {
@@ -524,6 +555,7 @@
         "status": "Pending",
         "checkin": false,
         "forms": false,
+        "trank":3,
         "payment": false
     },
     {
@@ -541,6 +573,7 @@
         "status": "Pending",
         "checkin": false,
         "forms": false,
+        "trank":4,
         "payment": false
     },
     {
@@ -558,6 +591,7 @@
         "status": "Pending",
         "checkin": false,
         "forms": false,
+        "trank":4,
         "payment": false
     },
     {
@@ -575,6 +609,7 @@
         "status": "Pending",
         "checkin": false,
         "forms": false,
+        "trank":1,
         "payment": false
     },
     {
@@ -592,6 +627,7 @@
         "status": "Pending",
         "checkin": false,
         "forms": false,
+        "trank":1,
         "payment": false
     },
     {
@@ -609,6 +645,7 @@
         "status": "Pending",
         "checkin": false,
         "forms": false,
+        "trank":2,
         "payment": false
     },
     {
@@ -626,6 +663,7 @@
         "status": "Pending",
         "checkin": false,
         "forms": false,
+        "trank":2,
         "payment": false
     },
     {
@@ -643,6 +681,7 @@
         "status": "Pending",
         "checkin": false,
         "forms": false,
+        "trank":1,
         "payment": false
     },
     {
@@ -660,6 +699,7 @@
         "status": "Pending",
         "checkin": false,
         "forms": false,
+        "trank":1,
         "payment": false
     },
     {
@@ -677,6 +717,7 @@
         "status": "Pending",
         "checkin": false,
         "forms": false,
+        "trank":3,
         "payment": false
     },
     {
@@ -694,6 +735,7 @@
         "status": "Pending",
         "checkin": false,
         "forms": false,
+        "trank":4,
         "payment": false
     },
     {
@@ -711,6 +753,7 @@
         "status": "Pending",
         "checkin": false,
         "forms": false,
+        "trank":3,
         "payment": false
     },
     {
@@ -728,6 +771,7 @@
         "status": "Pending",
         "checkin": false,
         "forms": false,
+        "trank":2,
         "payment": false
     },
     {
@@ -745,6 +789,7 @@
         "status": "Pending",
         "checkin": false,
         "forms": false,
+        "trank":2,
         "payment": false
     },
     {
@@ -762,6 +807,7 @@
         "status": "Pending",
         "checkin": false,
         "forms": false,
+        "trank":4,
         "payment": false
     },
     {
@@ -779,6 +825,7 @@
         "status": "Pending",
         "checkin": false,
         "forms": false,
+        "trank":4,
         "payment": false
     },
     {
@@ -796,6 +843,7 @@
         "status": "Pending",
         "checkin": false,
         "forms": false,
+        "trank":3,
         "payment": false
     },
     {
@@ -813,6 +861,7 @@
         "status": "Pending",
         "checkin": false,
         "forms": false,
+        "trank":3,
         "payment": false
     }
 ]
