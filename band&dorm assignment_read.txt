@@ -1,0 +1,34 @@
+These txt mainly talks about the input and output of bands & dorms assignment.
+Both algorithm can generate the random result
+
+The input of assign_bands.py (items in member.json):
+    'gender','firstName','lastName','memberID','talent'
+    'trank'
+The output of bands_assign (items put into bands.json):
+    'name': 'band (0-8)'
+    'type': 'band'
+    'talent1': 'memberID' || 'firstName' 'lastName' || 'trank'
+    'talent2': 'memberID' || 'firstName' 'lastName' || 'trank'
+    'talent3': 'memberID' || 'firstName' 'lastName' || 'trank'
+    'talent4': 'memberID' || 'firstName' 'lastName' || 'trank'
+    'talent5': 'memberID' || 'firstName' 'lastName' || 'trank'
+    'talent6': 'memberID' || 'firstName' 'lastName' || 'trank'
+    
+
+
+The input of assign_dorms.py (items in member.json):
+    'gender','age','firstName','lastName','memberID'
+The output of assign_dorms.py (items in dorms.json):
+    'name':'boy(girl)-dorm (1-3)'
+    'type':'dorm'
+    'gender':'Male(Female)'
+    'members':[
+            'memberID || age || firstName lastName'
+            'memberID || age || firstName lastName'
+            'memberID || age || firstName lastName'
+            'memberID || age || firstName lastName'
+            'memberID || age || firstName lastName'
+            'memberID || age || firstName lastName'
+            'memberID || age || firstName lastName'
+            'memberID || age || firstName lastName'
+            ]
