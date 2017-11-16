@@ -1,0 +1,52 @@
+[
+    {
+        "name": "band 0",
+        "type": "band",
+        "singer": "37 || 17 || John Davis || 2",
+        "guitarist": "8 || 14 || Kathy Boer || 4",
+        "drummer": "39 || 14 || Terry Davis || 1",
+        "bassist": "22 || 18 || Katie Evans || 3",
+        "keyboardist": "5 || 13 || Shirley Keller || 3",
+        "instrumentalist": "36 || 15 || Eric Wilkins || 2"
+    },
+    {
+        "name": "band 1",
+        "type": "band",
+        "singer": "43 || 17 || Charles Glass || 2",
+        "guitarist": "32 || 14 || Patrick Fernandez || 4",
+        "drummer": "9 || 15 || Angela Palmer || 1",
+        "bassist": "null",
+        "keyboardist": "29 || 18 || Michael Reedy || 2",
+        "instrumentalist": "6 || 13 || Francine Kendrick || 3"
+    },
+    {
+        "name": "band 2",
+        "type": "band",
+        "singer": "7 || 13 || Sharon Gonzales || 4",
+        "guitarist": "null",
+        "drummer": "27 || 17 || Christopher Riley || 2",
+        "bassist": "null",
+        "keyboardist": "17 || 16 || Loretta Marr || 1",
+        "instrumentalist": "12 || 18 || Dianne Ung || 2"
+    },
+    {
+        "name": "band 3",
+        "type": "band",
+        "singer": "19 || 15 || Courtney Boyd || 2",
+        "guitarist": "null",
+        "drummer": "33 || 18 || Thomas Martinez || 4",
+        "bassist": "null",
+        "keyboardist": "35 || 14 || Philip Gibbons || 1",
+        "instrumentalist": "42 || 17 || John Crosby || 3"
+    },
+    {
+        "name": "band 4",
+        "type": "band",
+        "singer": "25 || 13 || Fredrick Beaird || 1",
+        "guitarist": "14 || 17 || Elsie Conner || 3",
+        "drummer": "45 || 14 || Ben Thomas || 4",
+        "bassist": "null",
+        "keyboardist": "null",
+        "instrumentalist": "null"
+    }
+]
